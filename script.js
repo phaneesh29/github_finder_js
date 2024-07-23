@@ -54,7 +54,7 @@ const usernameInputForm = document.querySelector('form')
 let usernameInput;
 usernameInputForm.addEventListener("submit", (event) => {
     event.preventDefault()
-    usernameInput = document.querySelector("input[name=username]").value
+    usernameInput = document.querySelector("input[name=username]").value.trim()
     if (!usernameInput) {
         alert("Please enter a valid username")
     }
